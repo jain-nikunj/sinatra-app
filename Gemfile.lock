@@ -1,21 +1,37 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    ffi (1.9.10)
+    hitimes (1.2.2)
+    listen (2.10.1)
+      celluloid (~> 0.16.0)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
     mustermann (1.0.1)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
+    rb-fsevent (0.10.2)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    rerun (0.10.0)
+      listen (~> 2.7, >= 2.7.3)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.0)
       tilt (~> 2.0)
     tilt (2.0.8)
+    timers (4.0.4)
+      hitimes
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rerun
   sinatra (>= 1.4.0)
 
 RUBY VERSION
